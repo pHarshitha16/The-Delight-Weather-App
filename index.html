@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src\index.css" />
+
+    <title>The Delight Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 id="heading">The Delight Weather</h3>
+      <div class="weatherApp">
+        <form>
+          <div class="form-row row-1">
+            <div class="col-md-9 mb-2 mt-3 ml-3">
+              <input type="Search" class="form-control"placeholder="Enter name of the place.." id="SearchBar" />
+            </div>
+            <div class="col-md-2 mb-3 mt-3">
+              <input
+                class="submit btn btn-primary"
+                type="submit"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="row row-2">
+          <div class="col-2">
+            <img
+              class="image"
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+          <div class="col-4" id="temperature">
+            19
+            <span class="units"> °C |<a href="#"> °F</a></span>
+          </div>
+          <div class="col-6">
+            <ul id="placeDetails">
+              <li id="city">Narasannapeta</li>
+              <li id="dateTime">Thursday 22:00</li>
+              <li id="description">cloudy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-3">
+          <div class="col">
+            <ul class="conditions">
+              <li>Precipitation : 0%</li>
+              <li>Humidity : 67%</li>
+              <li>Wind : 10Km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-4">
+          <div class="col-md-2">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+          </div>
+        </div>
+        <div class="row row-5">
+          <div class="col-md-2">
+            <span class="unit1"> 28°C| <a href="#"> 57°F</a></span>
+          </div>
+          <div class="col-md-2">
+            <span class="unit2"> 90°C|<a href="#"> 89°F</a></span>
+          </div>
+          <div class="col-md-2">
+            <span class="unit3"> 56°C| <a href="#"> 78°F</a></span>
+          </div>
+          <div class="col-md-2">
+            <span class="unit4"> 89°C| <a href="#"> 89°F</a></span>
+          </div>
+          <div class="col-md-2">
+            <span class="unit5"> 67°C| <a href="#"> 89°F</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
