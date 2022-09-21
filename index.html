@@ -10,12 +10,13 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src\index.css" />
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>The Delight Weather App</title>
   </head>
   <body>
@@ -24,10 +25,15 @@
       <div class="weatherApp">
         <form>
           <div class="form-row row-1">
-            <div class="col-md-9 mb-2 mt-3 ml-3">
-              <input type="Search" class="form-control"placeholder="Enter name of the place.." id="SearchBar" />
+            <div class="col-md-9 mb-2 mt-3 ml-2">
+              <input
+                type="Search"
+                class="form-control"
+                placeholder="Enter name of the place.."
+                id="SearchBar"
+              />
             </div>
-            <div class="col-md-2 mb-3 mt-3">
+            <div class="col-md-2 ml-4 mb-3 mt-3">
               <input
                 class="submit btn btn-primary"
                 type="submit"
@@ -37,78 +43,115 @@
           </div>
         </form>
         <div class="row row-2">
-          <div class="col-2">
+          <div class="col-2 img">
             <img
-              class="image"
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png "
             />
           </div>
-          <div class="col-4" id="temperature">
-            19
-            <span class="units"> °C |<a href="#"> °F</a></span>
+          <div class="col-4 temp">
+            <span id="temperature">19</span>
+             <span class="units">
+              <a id="celsius" href="#" >°C |</a
+              ><a id="farhenheit" href="#"> °F</a></span
+            >
           </div>
           <div class="col-6">
             <ul id="placeDetails">
-              <li id="city">Narasannapeta</li>
-              <li id="dateTime">Thursday 22:00</li>
-              <li id="description">cloudy</li>
+              <li id="city"></li>
+              <li id="dateTime"></li>
+              <li id="description"></li>
             </ul>
           </div>
         </div>
         <div class="row row-3">
-          <div class="col">
+          <div class="col condition">
             <ul class="conditions">
-              <li>Precipitation : 0%</li>
-              <li>Humidity : 67%</li>
-              <li>Wind : 10Km/h</li>
+              <li id="precipitation">Precipitation : 0%</li>
+              <li id="humidity">Humidity : 67%</li>
+              <li id="wind">Wind : 10Km/h</li>
             </ul>
           </div>
         </div>
-        <div class="row row-4">
-          <div class="col-md-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            />
+        <div class="forecast">
+          <div class="row row4-0">
+            <div class="col-md">mon</div>
+            <div class="col-md">tue</div>
+            <div class="col-md">wed</div>
+            <div class="col-md">thurs</div>
+            <div class="col-md">Fri</div>
+            <div class="col-md">Sat</div>
+            <div class="col-md">Sun</div>
           </div>
-          <div class="col-md-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            />
+          <div class="row row-4">
+            <div class="col">
+              <img id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                id="img2"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+            </div>
           </div>
-          <div class="col-md-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            />
-          </div>
-          <div class="col-md-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            />
-          </div>
-          <div class="col-md-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            />
-          </div>
-        </div>
-        <div class="row row-5">
-          <div class="col-md-2">
-            <span class="unit1"> 28°C| <a href="#"> 57°F</a></span>
-          </div>
-          <div class="col-md-2">
-            <span class="unit2"> 90°C|<a href="#"> 89°F</a></span>
-          </div>
-          <div class="col-md-2">
-            <span class="unit3"> 56°C| <a href="#"> 78°F</a></span>
-          </div>
-          <div class="col-md-2">
-            <span class="unit4"> 89°C| <a href="#"> 89°F</a></span>
-          </div>
-          <div class="col-md-2">
-            <span class="unit5"> 67°C| <a href="#"> 89°F</a></span>
+          <div class="row row-5">
+            <div class="col-md">
+              <span class="unit1"> 28°C| <a href="#"> 57°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit2"> 90°C|<a href="#"> 89°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit3"> 56°C| <a href="#"> 78°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit4"> 89°C| <a href="#"> 89°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit5"> 67°C| <a href="#"> 89°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit5"> 67°C| <a href="#"> 89°F</a></span>
+            </div>
+            <div class="col-md">
+              <span class="unit5"> 67°C| <a href="#"> 89°F</a></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

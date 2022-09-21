@@ -4,10 +4,15 @@ body {
 .weatherApp {
   border: 2px solid #90e0ef;
   border-radius: 5px;
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
- background: rgb(250,255,255);
-background: linear-gradient(0deg, rgba(250,255,255,1) 0%, rgba(154,234,255,1) 76%, rgba(123,224,255,1) 100%);
+  background: rgb(250, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 255, 255, 1) 0%,
+    rgba(154, 234, 255, 1) 76%,
+    rgba(123, 224, 255, 1) 100%
+  );
 }
 #heading {
   display: block;
@@ -16,12 +21,12 @@ background: linear-gradient(0deg, rgba(250,255,255,1) 0%, rgba(154,234,255,1) 76
   padding: 2px 0px;
   text-align: center;
   border-radius: 5px;
-  max-width: 50%;
-  font-family: 'Poppins', sans-serif;
+  max-width: 60%;
+  font-family: "Open Sans", sans-serif;
   margin: 5px auto;
 }
 .submit {
-  padding: 0.375rem 1.5rem;
+  padding: 0.375rem 1.7rem;
   background-color: #09accd;
   border: 1px solid #09accd;
 }
@@ -37,46 +42,62 @@ background: linear-gradient(0deg, rgba(250,255,255,1) 0%, rgba(154,234,255,1) 76
   margin-right: 12px;
 }
 #dateTime {
-  margin-left: 85px;
   font-size: 15px;
   text-align: right;
   top: -2px;
   color: #03045e;
-   margin-right:3px;
-   font-family: 'Poppins', sans-serif;
+  margin-right: 6px;
+  font-family: "Open Sans", sans-serif;
 }
 #description {
-  margin-left: 140px;
   font-size: 15px;
   text-align: right;
   color: #03045e;
-   margin-right:3px;
-   font-family: 'Poppins', sans-serif;
-
+  margin-right: 6px;
+  font-family: "Open Sans", sans-serif;
 }
 #temperature {
   font-size: 60px;
-  font-family: "Roboto";
-  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
   text-align: left;
-  top: -15px;
   color: #03045e;
+  top:10px;
+
+  
+}
+.temp {
+  top: -15px;
+}
+.condition {
+  top: -10px;
+}
+#icon{
+ width:80px;
+ height: 80px;
+ text-align:center;
+ 
+
 }
 #city {
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: right;
   color: #03045e;
   margin: -5px;
-  margin-right:3px;
+  margin-right: 6px;
 }
 .units {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Open Sans", sans-serif;
   position: relative;
   top: -30px;
-  left: -17px;
+  left: -6px;
   color: #03045e;
+}
+#celsius:hover,#farhenheit:hover{
+  text-decoration:none;
+  color:#03045e;
 }
 .conditions {
   list-style: none;
@@ -85,20 +106,28 @@ background: linear-gradient(0deg, rgba(250,255,255,1) 0%, rgba(154,234,255,1) 76
   margin: 0px;
   padding-left: 15px;
   padding-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+#img2 {
+  width: 40px;
+}
+.forecast {
+  width: 90%;
+  margin: 0 auto;
 }
 .row-4 {
-  margin-left: 50px;
+  text-align: center;
   margin-top: 5px;
 }
+.row4-0 {
+  text-align: center;
+}
 .row-5 {
-
   margin-bottom: 10px;
-  margin-left: 70px;
+  text-align: center;
 }
 .row-2 {
-  margin-bottom: -31px;
-
+  margin-bottom: -15px;
 }
 .image {
   margin-left: 15px;
@@ -108,9 +137,9 @@ background: linear-gradient(0deg, rgba(250,255,255,1) 0%, rgba(154,234,255,1) 76
 .unit3,
 .unit4,
 .unit5 {
-  font-size: 12px;
-  font-family: "Roboto";
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
 }
-.unit1{
-  text-align:left;
+.unit1 {
+  text-align: left;
 }
