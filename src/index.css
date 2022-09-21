@@ -140,3 +140,10 @@ body {
 .unit1 {
   text-align: left;
 }
+#github{
+  text-decoration: none;
+  display:block;
+  margin:0 auto;
+  text-align:ceter;
+  font-family: "Open Sans",sans-serif;
+}
