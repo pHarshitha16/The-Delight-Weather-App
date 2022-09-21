@@ -26,7 +26,7 @@ body {
   margin: 5px auto;
 }
 .submit {
-  padding: 0.375rem 1.7rem;
+  padding: 0.375rem 1.3rem;
   background-color: #09accd;
   border: 1px solid #09accd;
 }
@@ -62,9 +62,7 @@ body {
   margin-bottom: 20px;
   text-align: left;
   color: #03045e;
-  top:10px;
-
-  
+  top: 10px;
 }
 .temp {
   top: -15px;
@@ -72,12 +70,10 @@ body {
 .condition {
   top: -10px;
 }
-#icon{
- width:80px;
- height: 80px;
- text-align:center;
- 
-
+#icon {
+  width: 80px;
+  height: 80px;
+  text-align: center;
 }
 #city {
   font-size: 25px;
@@ -95,9 +91,10 @@ body {
   left: -6px;
   color: #03045e;
 }
-#celsius:hover,#farhenheit:hover{
-  text-decoration:none;
-  color:#03045e;
+#celsius:hover,
+#farhenheit:hover {
+  text-decoration: none;
+  color: #03045e;
 }
 .conditions {
   list-style: none;
