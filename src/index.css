@@ -116,38 +116,15 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-.row-4 {
-  text-align: center;
-  margin-top: 5px;
-}
-.row4-0 {
-  text-align: center;
-}
-.row-5 {
-  margin-bottom: 10px;
-  text-align: center;
-}
 .row-2 {
   margin-bottom: -15px;
 }
 .image {
   margin-left: 15px;
 }
-.unit1,
-.unit2,
-.unit3,
-.unit4,
-.unit5 {
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-}
-.unit1 {
-  text-align: left;
-}
 #github{
+ padding-left:20%;
   text-decoration: none;
-  display:block;
-  margin:0 auto;
-  text-align:ceter;
+  text-align:center;
   font-family: "Open Sans",sans-serif;
 }
