@@ -91,10 +91,14 @@ body {
   left: -6px;
   color: #03045e;
 }
-#celsius,#farhenheit,#celsius:hover,
-#farhenheit:hover {
+#celsius,#celsius:hover
+ {
   text-decoration: none;
   color: #03045e;
+}
+#farhenheit:hover,#farhenheit{
+    text-decoration: none;
+    color:#0083a1;
 }
 .conditions {
   list-style: none;
