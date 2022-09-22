@@ -64,6 +64,7 @@ searchButton.addEventListener("click", searchPlace);
 //--------------------unit conversion-----------//
 function farhenheitScale(event) {
   event.preventDefault();
+  document.querySelector("#celsius").style.color = "#03045e";
   document.querySelector("#farhenheit").style.color="#03045e";
   farTemp =((celTemp * 9) / 5 + 32);
   console.log(farTemp);
