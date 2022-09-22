@@ -64,6 +64,7 @@ searchButton.addEventListener("click", searchPlace);
 //--------------------unit conversion-----------//
 function farhenheitScale(event) {
   event.preventDefault();
+  document.querySelector("#farhenheit").style.color="#03045e";
   farTemp =((celTemp * 9) / 5 + 32);
   console.log(farTemp);
   document.querySelector("#temperature").innerHTML = Math.round(farTemp);
@@ -72,6 +73,8 @@ function farhenheitScale(event) {
 }
 function celsiusScale(event) {
   event.preventDefault();
+  document.querySelector("#farhenheit").style.color = "#09a0be";
+  document.querySelector("#celsius").style.color = "#03045e";
   let cTemp = Math.round(((farTemp - 32) * 5) / 9);
   console.log(cTemp);
   document.querySelector("#temperature").innerHTML=cTemp;
