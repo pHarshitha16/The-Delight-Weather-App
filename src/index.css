@@ -27,7 +27,7 @@ body {
 }
 .submit {
   padding: 0.375rem 1.3rem;
-  background-color: #09accd;
+  background-color:#09accd;
   border: 1px solid #09accd;
 }
 .submit:hover {
